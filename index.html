@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div
+      style="background-color: rgb(247, 236, 222)"
+      class="container-fluid w-100 py-5 d-flex flex-column justify-content-center align-items-center"
+    >
+      <h1
+        style="
+          font-size: 70px;
+          line-height: 60px;
+          font-weight: 500;
+          font-family: Pacifico;
+          color: #352e28;
+        "
+        class="head py-2 position-relative"
+      >
+        Bookmarker
+      </h1>
+      <div
+        class="bookmark-body w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4"
+      >
+        <h2 style="font-weight: 700; font-size: 30px">
+          <i class="fa-solid fa-bookmark"></i>
+          Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+
+        <div class="form w-100">
+          <label
+            for="bookmarkName"
+            style="font-weight: 600; font-size: 20px"
+            class="p-2"
+          >
+            <i class="fa-solid fa-book-bookmark pe-1"></i>
+            Site Name</label
+          >
+          <input
+            type="text"
+            class="form-control py-3"
+            id="bookmarkName"
+            placeholder="bookmark Name"
+          />
+        </div>
+
+        <div class="form w-100">
+          <label
+            for="bookmarkURL"
+            style="font-weight: 600; font-size: 20px"
+            class="p-2"
+          >
+            <i class="fa-solid fa-link pe-1"></i>
+            Site URL</label
+          >
+          <input
+            type="url"
+            class="form-control py-3"
+            id="bookmarkURL"
+            placeholder="Website URL"
+          />
+        </div>
+        <button type="button" class="btn btn-lg" id="addBtn">submit</button>
+      </div>
+      <div class="container mt-5">
+        <div class="row p-4" style="font-size: 20px">
+          <table class="table text-center" style="background-color: white">
+            <thead>
+              <tr>
+                <th class="text-capitalize">index</th>
+                <th class="text-capitalize">Website Name</th>
+                <th class="text-capitalize">Visit</th>
+                <th class="text-capitalize">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tableContent"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/54bfb89ec0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./js/bootstrap.bundle.min.js" />
+  </body>
+</html>
